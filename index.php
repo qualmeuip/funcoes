@@ -1,5 +1,4 @@
-function get_user_ip(){
-		
+function get_user_ip(){		
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])){
 		$ip = $_SERVER['HTTP_CLIENT_IP'];
 	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
@@ -7,6 +6,5 @@ function get_user_ip(){
 	} else {
 		$ip = $_SERVER['REMOTE_ADDR'];
 	}
-
 	return $ip;
 }
