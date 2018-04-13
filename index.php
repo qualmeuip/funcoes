@@ -6,5 +6,5 @@ function get_user_ip(){
 	} else {
 		$ip = $_SERVER['REMOTE_ADDR'];
 	}
-	return $ ip;
+	return $ip;
 }
